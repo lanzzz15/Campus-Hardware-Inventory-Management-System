@@ -1,0 +1,15 @@
+# Environment variables (Database credentials/secrets)
+.env
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+
+# Local SQLite databases (since you migrated to Supabase)
+*.db
+*.sqlite3
