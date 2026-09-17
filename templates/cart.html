@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %}Borrow Cart — Campus Hardware{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <h2>Borrow Cart</h2>
+    <p class="page-sub">Review your selections before submitting for admin approval</p>
+  </div>
+  <a href="{{ url_for('catalog') }}" class="btn btn-outline">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    Back to Catalog
+  </a>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+    Cart Items
+    {% if cart %}<span class="badge-count">{{ cart | length }}</span>{% endif %}
+  </div>
+  <div class="card-body p-0">
+    {% if cart %}
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th style="width:120px">Quantity</th>
+            <th style="width:120px">Action</th>
+          </tr>
+        </thead>
+        <tbody id="cart-body">
+          {% for c in cart %}
+          <tr id="cart-row-{{ c.item_id }}">
+            <td class="td-bold">{{ c.item_name }}</td>
+            <td class="td-center">{{ c.quantity }}</td>
+            <td class="td-center">
+              <button class="btn btn-xs btn-danger" onclick="removeFromCart('{{ c.item_id }}')">Remove</button>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="cart-summary">
+      <div class="cart-info">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Submitted requests require admin approval before items are released to you.
+      </div>
+      <div class="cart-actions">
+        <button class="btn btn-outline" onclick="clearCart()">Clear Cart</button>
+        <form method="POST" action="{{ url_for('cart_submit') }}">
+          <button type="submit" class="btn btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            Submit Borrow Request
+          </button>
+        </form>
+      </div>
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <p>Your cart is empty.</p>
+      <a href="{{ url_for('catalog') }}" class="btn btn-primary">Browse Catalog</a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function removeFromCart(itemId) {
+  const fd = new FormData();
+  fd.append('item_id', itemId);
+  fetch('/cart/remove', { method: 'POST', body: fd })
+    .then(r => r.json())
+    .then(d => {
+      if (d.success) {
+        document.getElementById('cart-row-' + itemId)?.remove();
+        updateCartBadge(d.cart_count);
+        if (d.cart_count === 0) location.reload();
+      }
+    });
+}
+
+function clearCart() {
+  if (!confirm('Clear all items from your cart?')) return;
+  fetch('/cart/clear', { method: 'POST' })
+    .then(r => r.json())
+    .then(d => { if (d.success) { updateCartBadge(0); location.reload(); } });
+}
+</script>
+{% endblock %}

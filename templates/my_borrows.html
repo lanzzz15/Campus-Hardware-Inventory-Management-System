@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}My Borrowed Items — Campus Hardware{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <h2>My Borrowed Items</h2>
+    <p class="page-sub">Track your current borrows, pending requests, and return history</p>
+  </div>
+  <a href="{{ url_for('catalog') }}" class="btn btn-outline">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    Back to Catalog
+  </a>
+</div>
+
+<!-- CURRENTLY BORROWED -->
+<div class="card mb-5">
+  <div class="card-header">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+    Currently Borrowed
+    {% if my_active %}<span class="badge-count">{{ my_active | length }}</span>{% endif %}
+  </div>
+  <div class="card-body p-0">
+    {% if my_active %}
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>ID</th><th>Item</th><th>Qty</th><th>Borrowed On</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          {% for r in my_active %}
+          <tr>
+            <td class="td-mono">{{ r['request_id'] }}</td>
+            <td class="td-bold">{{ r['item_name'] }}</td>
+            <td class="td-center">{{ r['quantity'] }}</td>
+            <td class="td-muted">{{ r['timestamp'] }}</td>
+            <td class="td-center"><span class="badge badge-low-stock">Borrowed</span></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">Contact an admin or return items to the equipment room to have these marked as returned.</p>
+    {% else %}
+    <div class="empty-state empty-state-sm"><p>You have no items currently borrowed.</p></div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- PENDING BORROW REQUESTS -->
+<div class="card mb-5">
+  <div class="card-header">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    Pending Borrow Requests
+    {% if my_pending %}<span class="badge-count">{{ my_pending | length }}</span>{% endif %}
+  </div>
+  <div class="card-body p-0">
+    {% if my_pending %}
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>ID</th><th>Item</th><th>Qty</th><th>Requested</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          {% for r in my_pending %}
+          <tr>
+            <td class="td-mono">{{ r['request_id'] }}</td>
+            <td class="td-bold">{{ r['item_name'] }}</td>
+            <td class="td-center">{{ r['quantity'] }}</td>
+            <td class="td-muted">{{ r['timestamp'] }}</td>
+            <td class="td-center"><span class="badge badge-low-stock">Awaiting Approval</span></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="empty-state empty-state-sm"><p>No pending borrow requests.</p></div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- RETURN HISTORY -->
+<div class="card mb-5">
+  <div class="card-header">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+    Return History
+    {% if my_history %}<span class="badge-count">{{ my_history | length }}</span>{% endif %}
+  </div>
+  <div class="card-body p-0">
+    {% if my_history %}
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>ID</th><th>Item</th><th>Qty</th><th>Date</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          {% for r in my_history %}
+          <tr>
+            <td class="td-mono">{{ r['request_id'] }}</td>
+            <td class="td-bold">{{ r['item_name'] }}</td>
+            <td class="td-center">{{ r['quantity'] }}</td>
+            <td class="td-muted">{{ r['timestamp'] }}</td>
+            <td class="td-center">
+              {% if r['status'] == 'returned' %}
+              <span class="badge badge-in-stock">Returned</span>
+              {% else %}
+              <span class="badge badge-out-stock">Rejected</span>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="empty-state empty-state-sm"><p>No return history yet.</p></div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Register — Campus Hardware{% endblock %}
+
+{% block content %}
+<div class="auth-card auth-card-wide">
+  <div class="auth-header">
+    <div class="auth-logo">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+    </div>
+    <h1>Request Account</h1>
+    <p>New accounts require SuperAdmin approval</p>
+  </div>
+
+  <form method="POST" action="{{ url_for('register') }}" class="auth-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="3–20 chars, letters/numbers/_" required/>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="@gmail.com or @yahoo.com" required/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="role">Account Role</label>
+      <select id="role" name="role">
+        {% for r in roles %}
+        <option value="{{ r }}">{{ r }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <div class="input-password">
+        <input type="password" id="password" name="password" placeholder="Create a strong password" required oninput="checkPasswordStrength(this.value)"/>
+        <button type="button" class="toggle-pw" onclick="togglePassword('password', this)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </button>
+      </div>
+      <div id="pw-feedback" class="pw-feedback"></div>
+      <ul class="pw-rules">
+        <li id="r-len">At least 8 characters</li>
+        <li id="r-upper">One uppercase letter</li>
+        <li id="r-num">One number</li>
+        <li id="r-special">One special character (@#$%^&amp;*)</li>
+      </ul>
+    </div>
+
+    <div class="info-banner">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      Your request will be reviewed by a SuperAdmin before your account is activated.
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+  </form>
+
+  <div class="auth-links">
+    <a href="{{ url_for('login') }}">← Back to login</a>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function checkPasswordStrength(pw) {
+  document.getElementById('r-len').className = pw.length >= 8 ? 'rule-ok' : '';
+  document.getElementById('r-upper').className = /[A-Z]/.test(pw) ? 'rule-ok' : '';
+  document.getElementById('r-num').className = /[0-9]/.test(pw) ? 'rule-ok' : '';
+  document.getElementById('r-special').className = /[@#$%^&*]/.test(pw) ? 'rule-ok' : '';
+}
+</script>
+{% endblock %}

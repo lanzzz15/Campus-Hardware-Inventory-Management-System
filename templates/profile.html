@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}My Profile — Campus Hardware{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <h2>My Profile &amp; Security</h2>
+    <p class="page-sub">View your account details and update your password</p>
+  </div>
+  <a href="{{ url_for('catalog') }}" class="btn btn-outline">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    Back to Catalog
+  </a>
+</div>
+
+<div class="two-col-layout">
+  <!-- Account Overview -->
+  <div class="card">
+    <div class="card-header">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      Account Overview
+    </div>
+    <div class="card-body">
+      <dl class="profile-dl">
+        <dt>Username</dt>
+        <dd>{{ user['username'] if user else username }}</dd>
+        <dt>Email</dt>
+        <dd>{{ user['email'] if user else '—' }}</dd>
+        <dt>Role</dt>
+        <dd><span class="role-tag role-{{ (user['role'] if user else 'user') | lower | replace(' ','') }}">{{ user['role'] if user else 'User' }}</span></dd>
+      </dl>
+    </div>
+  </div>
+
+  <!-- Change Password -->
+  <div class="card">
+    <div class="card-header">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      Update Password
+    </div>
+    <div class="card-body">
+      <form method="POST" action="{{ url_for('profile') }}">
+        <div class="form-group">
+          <label for="new_password">New Password</label>
+          <div class="input-password">
+            <input type="password" id="new_password" name="new_password" placeholder="Enter new password" required oninput="checkPasswordStrength(this.value)"/>
+            <button type="button" class="toggle-pw" onclick="togglePassword('new_password', this); togglePassword('confirm_password', this)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+          <ul class="pw-rules">
+            <li id="r-len">At least 8 characters</li>
+            <li id="r-upper">One uppercase letter</li>
+            <li id="r-num">One number</li>
+            <li id="r-special">One special character (@#$%^&amp;*)</li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for="confirm_password">Confirm Password</label>
+          <input type="password" id="confirm_password" name="confirm_password" placeholder="Repeat new password" required/>
+        </div>
+        <button type="submit" class="btn btn-primary">Update Password</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function checkPasswordStrength(pw) {
+  document.getElementById('r-len').className = pw.length >= 8 ? 'rule-ok' : '';
+  document.getElementById('r-upper').className = /[A-Z]/.test(pw) ? 'rule-ok' : '';
+  document.getElementById('r-num').className = /[0-9]/.test(pw) ? 'rule-ok' : '';
+  document.getElementById('r-special').className = /[@#$%^&*]/.test(pw) ? 'rule-ok' : '';
+}
+</script>
+{% endblock %}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% block title %}Campus Hardware Inventory{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+  {% block head %}{% endblock %}
+</head>
+<body>
+
+{% if session.username %}
+<nav class="navbar">
+  <div class="nav-brand">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+    Campus Hardware
+  </div>
+  <ul class="nav-links">
+    <li><a href="{{ url_for('catalog') }}" class="{{ 'active' if request.endpoint == 'catalog' }}">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+      Catalog
+    </a></li>
+
+    {% if session.role not in ['Admin','SuperAdmin'] %}
+    <li><a href="{{ url_for('cart_view') }}" class="nav-cart {{ 'active' if request.endpoint == 'cart_view' }}">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      Cart
+      {% set cart_count = session.cart | sum(attribute='quantity') if session.cart else 0 %}
+      {% if cart_count > 0 %}<span class="cart-badge">{{ cart_count }}</span>{% endif %}
+    </a></li>
+    <li><a href="{{ url_for('my_borrows') }}" class="{{ 'active' if request.endpoint == 'my_borrows' }}">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      My Borrowed Items
+    </a></li>
+    <li><a href="{{ url_for('profile') }}" class="{{ 'active' if request.endpoint == 'profile' }}">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Profile
+    </a></li>
+    {% endif %}
+
+    {% if session.role in ['Admin','SuperAdmin'] %}
+    <li><a href="{{ url_for('approvals') }}" class="{{ 'active' if request.endpoint == 'approvals' }}">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      Approvals
+    </a></li>
+    {% endif %}
+
+    {% if session.role == 'SuperAdmin' %}
+    <li><a href="{{ url_for('manage_accounts') }}" class="{{ 'active' if request.endpoint == 'manage_accounts' }}">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      Accounts
+    </a></li>
+    {% endif %}
+  </ul>
+  <div class="nav-user">
+    <span class="user-pill">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      {{ session.username }}
+      <span class="role-tag role-{{ session.role | lower | replace(' ','') }}">{{ session.role }}</span>
+    </span>
+    <a href="{{ url_for('logout') }}" class="btn-logout">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+      Logout
+    </a>
+  </div>
+</nav>
+{% endif %}
+
+<main class="{% if not session.username %}auth-layout{% else %}main-layout{% endif %}">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div class="flash-stack">
+      {% for cat, msg in messages %}
+      <div class="flash flash-{{ cat }}">
+        <span>{{ msg }}</span>
+        <button class="flash-close" onclick="this.parentElement.remove()">×</button>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  {% endwith %}
+
+  {% block content %}{% endblock %}
+</main>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

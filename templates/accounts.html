@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}Manage Accounts — Campus Hardware{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <h2>Manage Accounts</h2>
+    <p class="page-sub">All registered accounts — the permanent SuperAdmin cannot be removed</p>
+  </div>
+  <a href="{{ url_for('catalog') }}" class="btn btn-outline">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    Back to Catalog
+  </a>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    Registered Accounts
+    <span class="badge-count">{{ accounts | length }}</span>
+  </div>
+  <div class="card-body p-0">
+    {% if accounts %}
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th style="width:140px">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for acc in accounts %}
+          <tr>
+            <td class="td-bold">{{ acc['username'] }}</td>
+            <td>{{ acc['email'] or '—' }}</td>
+            <td><span class="role-tag role-{{ acc['role'] | lower | replace(' ','') }}">{{ acc['role'] }}</span></td>
+            <td>
+              {% if acc['locked'] %}
+              <span class="badge badge-out-stock">Locked</span>
+              {% else %}
+              <span class="badge badge-in-stock">Active</span>
+              {% endif %}
+            </td>
+            <td class="td-actions">
+              <form method="POST" action="{{ url_for('remove_account', username=acc['username']) }}"
+                    data-confirm="Permanently remove account {{ acc['username'] }}? This cannot be undone.">
+                <button type="submit" class="btn btn-xs btn-danger">Remove</button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+      <p>No accounts registered yet.</p>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.querySelectorAll('form[data-confirm]').forEach(function(form) {
+  form.addEventListener('submit', function(e) {
+    if (!confirm(form.dataset.confirm)) e.preventDefault();
+  });
+});
+</script>
+{% endblock %}

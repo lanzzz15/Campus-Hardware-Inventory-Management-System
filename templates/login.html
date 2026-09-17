@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Login — Campus Hardware{% endblock %}
+
+{% block content %}
+<div class="auth-card">
+  <div class="auth-header">
+    <div class="auth-logo">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+    </div>
+    <h1>Campus Hardware</h1>
+    <p>Inventory Management System</p>
+  </div>
+
+  <form method="POST" action="{{ url_for('login') }}" class="auth-form">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required autofocus/>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <div class="input-password">
+        <input type="password" id="password" name="password" placeholder="Enter your password" required/>
+        <button type="button" class="toggle-pw" onclick="togglePassword('password', this)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </button>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+  </form>
+
+  <div class="auth-links">
+    <a href="{{ url_for('register') }}">Request an account</a>
+    <span>·</span>
+    <a href="{{ url_for('reset_password') }}">Reset / Unlock password</a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,1084 @@
+2026-08-13 08:51:10 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-08-13 09:23:38 - [INFO] - CampusHardwareLogger - Database migration: Added email column.
+2026-08-13 09:23:38 - [INFO] - CampusHardwareLogger - Database migration: Added failed_attempts column.
+2026-08-13 09:23:38 - [INFO] - CampusHardwareLogger - Database migration: Added locked_until column.
+2026-08-13 09:23:38 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-08-13 09:23:38 - [WARNING] - CampusHardwareLogger - Registration validation failure: Value error, Password must contain at least one special character (@#$%^&*).
+2026-08-13 09:23:38 - [WARNING] - CampusHardwareLogger - Registration validation failure: Value error, Password must contain at least one special character (@#$%^&*).
+2026-08-13 09:24:45 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-08-13 09:24:45 - [INFO] - CampusHardwareLogger - Account created: 'dupemailtest_001'
+2026-08-13 09:24:45 - [WARNING] - CampusHardwareLogger - Registration attempt failed: email 'dupecheck@gmail.com' already registered.
+2026-08-13 10:24:38 - [INFO] - CampusHardwareLogger - Account created: 'dbtest_101'
+2026-08-13 10:24:38 - [WARNING] - CampusHardwareLogger - Registration attempt failed for 'dbtest_101' / 'dbtest101@gmail.com' because the account already exists.
+2026-08-13 10:24:38 - [WARNING] - CampusHardwareLogger - Registration attempt failed for 'dbtest_102' / 'dbtest101@gmail.com' because the account already exists.
+2026-09-03 09:02:57 - [INFO] - CampusHardwareLogger - Database migration: Added role column.
+2026-09-03 09:02:57 - [INFO] - CampusHardwareLogger - Database migration: Added locked column.
+2026-09-03 09:02:57 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:05:16 - [WARNING] - CampusHardwareLogger - Failed login attempt for unknown user 'Lance15'
+2026-09-03 09:05:21 - [WARNING] - CampusHardwareLogger - Failed login attempt for unknown user 'Lance15'
+2026-09-03 09:08:23 - [WARNING] - CampusHardwareLogger - Failed login attempt for unknown user 'Lance15'
+2026-09-03 09:08:26 - [WARNING] - CampusHardwareLogger - Failed login attempt for unknown user 'Lance15'
+2026-09-03 09:08:57 - [INFO] - CampusHardwareLogger - Account created: 'Lance111' with role 'Admin'
+2026-09-03 09:09:06 - [INFO] - CampusHardwareLogger - User 'Lance111' logged in successfully as 'Admin'.
+2026-09-03 09:13:16 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:14:00 - [INFO] - CampusHardwareLogger - User 'Lance111' logged in successfully as 'Admin'.
+2026-09-03 09:15:32 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:24:29 - [INFO] - CampusHardwareLogger - User 'Lance111' logged in successfully as 'Admin'.
+2026-09-03 09:24:58 - [INFO] - CampusHardwareLogger - New equipment added: 'Arduino Uno'
+2026-09-03 09:25:19 - [INFO] - CampusHardwareLogger - New equipment added: 'ESP32'
+2026-09-03 09:25:43 - [INFO] - CampusHardwareLogger - Hardware ID 2 ('ESP32') deleted.
+2026-09-03 09:25:58 - [INFO] - CampusHardwareLogger - New equipment added: 'Raspberry Pi 5'
+2026-09-03 09:26:13 - [INFO] - CampusHardwareLogger - New equipment added: 'ESP32'
+2026-09-03 09:27:48 - [INFO] - CampusHardwareLogger - New equipment added: 'LED (RED)'
+2026-09-03 09:28:15 - [INFO] - CampusHardwareLogger - New equipment added: 'LED (Blue)'
+2026-09-03 09:28:30 - [WARNING] - CampusHardwareLogger - Duplicate entry attempt: 'LED (RED)'
+2026-09-03 09:28:40 - [INFO] - CampusHardwareLogger - New equipment added: 'LED (GREEN)'
+2026-09-03 09:28:59 - [INFO] - CampusHardwareLogger - New equipment added: 'LED (PINK)'
+2026-09-03 09:29:19 - [INFO] - CampusHardwareLogger - New equipment added: 'RX 580'
+2026-09-03 09:30:03 - [INFO] - CampusHardwareLogger - New equipment added: 'Breadboard'
+2026-09-03 09:30:43 - [INFO] - CampusHardwareLogger - New equipment added: 'Jetson NANO'
+2026-09-03 09:31:01 - [INFO] - CampusHardwareLogger - User 'Lance111' logged out.
+2026-09-03 09:31:27 - [INFO] - CampusHardwareLogger - Account created: 'Lance12' with role 'User'
+2026-09-03 09:31:33 - [INFO] - CampusHardwareLogger - User 'Lance12' logged in successfully as 'User'.
+2026-09-03 09:31:43 - [INFO] - CampusHardwareLogger - User 'Lance12' logged out.
+2026-09-03 09:32:14 - [INFO] - CampusHardwareLogger - Permanent SuperAdmin account created.
+2026-09-03 09:32:14 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:33:41 - [INFO] - CampusHardwareLogger - Account creation request submitted for 'Lance45'.
+2026-09-03 09:33:56 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 09:34:09 - [INFO] - CampusHardwareLogger - Account request #1 for 'Lance45' approved.
+2026-09-03 09:34:17 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-03 09:34:28 - [INFO] - CampusHardwareLogger - User 'Lance45' logged in successfully as 'Admin'.
+2026-09-03 09:34:38 - [INFO] - CampusHardwareLogger - User 'Lance45' logged out.
+2026-09-03 09:34:47 - [INFO] - CampusHardwareLogger - User 'Lance12' logged in successfully as 'User'.
+2026-09-03 09:35:46 - [INFO] - CampusHardwareLogger - Borrow request submitted by 'Lance12' for 2 x 'Arduino Uno'.
+2026-09-03 09:41:00 - [INFO] - CampusHardwareLogger - User 'Lance12' logged out.
+2026-09-03 09:41:32 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 09:41:44 - [INFO] - CampusHardwareLogger - Borrow request #1 for 'Lance12' approved.
+2026-09-03 09:42:21 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-03 09:42:30 - [INFO] - CampusHardwareLogger - User 'Lance45' logged in successfully as 'Admin'.
+2026-09-03 09:42:53 - [INFO] - CampusHardwareLogger - User 'Lance45' logged out.
+2026-09-03 09:43:05 - [INFO] - CampusHardwareLogger - User 'Lance111' logged in successfully as 'Admin'.
+2026-09-03 09:43:16 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:43:25 - [INFO] - CampusHardwareLogger - User 'Lance12' logged in successfully as 'User'.
+2026-09-03 09:44:06 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:45:31 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:45:46 - [INFO] - CampusHardwareLogger - User 'Lance12' logged in successfully as 'User'.
+2026-09-03 09:46:02 - [INFO] - CampusHardwareLogger - Borrow request submitted by 'Lance12' for 1 x 'Arduino Uno'.
+2026-09-03 09:46:34 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:46:43 - [WARNING] - CampusHardwareLogger - Failed login attempt for 'Lance12'. Attempts: 1
+2026-09-03 09:46:50 - [INFO] - CampusHardwareLogger - User 'Lance12' logged in successfully as 'User'.
+2026-09-03 09:46:57 - [INFO] - CampusHardwareLogger - Borrow request submitted by 'Lance12' for 1 x 'LED (RED)'.
+2026-09-03 09:47:50 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:48:01 - [WARNING] - CampusHardwareLogger - Failed login attempt for 'Lance1015'. Attempts: 1
+2026-09-03 09:48:08 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 09:48:18 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-03 09:48:26 - [INFO] - CampusHardwareLogger - User 'Lance111' logged in successfully as 'Admin'.
+2026-09-03 09:49:00 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:49:11 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 09:49:16 - [INFO] - CampusHardwareLogger - Borrow request #2 for 'Lance12' rejected.
+2026-09-03 09:49:19 - [INFO] - CampusHardwareLogger - Borrow request #3 for 'Lance12' rejected.
+2026-09-03 09:49:28 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:49:38 - [INFO] - CampusHardwareLogger - User 'Lance12' logged in successfully as 'User'.
+2026-09-03 09:50:32 - [INFO] - CampusHardwareLogger - User 'Lance12' logged out.
+2026-09-03 09:50:40 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 09:54:08 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:54:17 - [INFO] - CampusHardwareLogger - User 'Lance12' logged in successfully as 'User'.
+2026-09-03 09:55:44 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 09:55:53 - [WARNING] - CampusHardwareLogger - Failed login attempt for 'Lance12'. Attempts: 1
+2026-09-03 09:55:59 - [INFO] - CampusHardwareLogger - User 'Lance12' logged in successfully as 'User'.
+2026-09-03 10:08:20 - [INFO] - CampusHardwareLogger - Database migration: Added batch_id column to borrow_requests.
+2026-09-03 10:08:22 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:12:55 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:13:19 - [WARNING] - CampusHardwareLogger - Failed login attempt for 'Lance12'. Attempts: 1
+2026-09-03 10:13:27 - [INFO] - CampusHardwareLogger - User 'Lance12' logged in successfully as 'User'.
+2026-09-03 10:14:17 - [INFO] - CampusHardwareLogger - Borrow cart submitted by 'Lance12': 1 x 'Arduino Uno', 5 x 'LED (RED)', 1 x 'Raspberry Pi 5' (batch Lance12-1788401657548).
+2026-09-03 10:14:24 - [INFO] - CampusHardwareLogger - User 'Lance12' logged out.
+2026-09-03 10:14:33 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 10:14:53 - [INFO] - CampusHardwareLogger - Borrow request #1 for 'Lance12' marked as returned. 2 x 'Arduino Uno' restocked.
+2026-09-03 10:15:02 - [INFO] - CampusHardwareLogger - Borrow request #5 for 'Lance12' approved.
+2026-09-03 10:15:05 - [INFO] - CampusHardwareLogger - Borrow request #6 for 'Lance12' approved.
+2026-09-03 10:15:09 - [INFO] - CampusHardwareLogger - Borrow request #4 for 'Lance12' approved.
+2026-09-03 10:15:12 - [INFO] - CampusHardwareLogger - Borrow request #4 for 'Lance12' marked as returned. 1 x 'Arduino Uno' restocked.
+2026-09-03 10:15:14 - [INFO] - CampusHardwareLogger - Borrow request #6 for 'Lance12' marked as returned. 1 x 'Raspberry Pi 5' restocked.
+2026-09-03 10:15:16 - [INFO] - CampusHardwareLogger - Borrow request #5 for 'Lance12' marked as returned. 5 x 'LED (RED)' restocked.
+2026-09-03 10:15:55 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-03 10:16:06 - [WARNING] - CampusHardwareLogger - Failed login attempt for 'Lance12'. Attempts: 1
+2026-09-03 10:16:08 - [WARNING] - CampusHardwareLogger - Failed login attempt for 'Lance12'. Attempts: 2
+2026-09-03 10:16:09 - [WARNING] - CampusHardwareLogger - Account 'Lance12' locked after 3 failed attempts.
+2026-09-03 10:16:31 - [INFO] - CampusHardwareLogger - Password reset/unlock request submitted for 'Lance12'.
+2026-09-03 10:16:42 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 10:17:34 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-03 10:17:48 - [INFO] - CampusHardwareLogger - User 'Lance45' logged in successfully as 'Admin'.
+2026-09-03 10:27:30 - [INFO] - CampusHardwareLogger - User 'Lance45' logged out.
+2026-09-03 10:27:43 - [WARNING] - CampusHardwareLogger - Failed login attempt for privileged account 'Lance1015' (role: SuperAdmin). Lockout does not apply to this role.
+2026-09-03 10:27:51 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 10:29:47 - [INFO] - CampusHardwareLogger - New equipment added: 'DC motor'
+2026-09-03 10:30:26 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-03 10:30:50 - [INFO] - CampusHardwareLogger - Account creation request submitted for 'Lance122'.
+2026-09-03 10:30:58 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 10:31:03 - [INFO] - CampusHardwareLogger - Account request #2 for 'Lance122' approved.
+2026-09-03 10:31:06 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-03 10:31:21 - [WARNING] - CampusHardwareLogger - Failed login attempt for unknown user 'Lance@122'
+2026-09-03 10:31:28 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in successfully as 'User'.
+2026-09-03 10:33:41 - [INFO] - CampusHardwareLogger - User 'Lance122' logged out.
+2026-09-03 10:33:56 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:34:05 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:34:09 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:34:12 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:35:16 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:36:30 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:36:46 - [WARNING] - CampusHardwareLogger - Failed login attempt for 'Lance122'. Attempts: 1
+2026-09-03 10:36:51 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in successfully as 'User'.
+2026-09-03 10:38:46 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:38:58 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 10:39:53 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-03 10:40:23 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in successfully as 'User'.
+2026-09-03 10:43:12 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:43:24 - [INFO] - CampusHardwareLogger - User 'Lance45' logged in successfully as 'Admin'.
+2026-09-03 10:44:49 - [INFO] - CampusHardwareLogger - User 'Lance45' logged out.
+2026-09-03 10:44:58 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 10:45:53 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:46:08 - [WARNING] - CampusHardwareLogger - Failed login attempt for 'Lance122'. Attempts: 1
+2026-09-03 10:46:15 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in successfully as 'User'.
+2026-09-03 10:46:44 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:46:57 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 10:49:26 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:49:33 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:50:06 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in successfully as 'User'.
+2026-09-03 10:52:21 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:52:33 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in successfully as 'User'.
+2026-09-03 10:52:45 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 10:59:01 - [INFO] - CampusHardwareLogger - Account creation request submitted for 'Lance55'.
+2026-09-03 10:59:11 - [WARNING] - CampusHardwareLogger - Failed login attempt for privileged account 'Lance1015' (role: SuperAdmin). Lockout does not apply to this role.
+2026-09-03 10:59:22 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-03 10:59:35 - [INFO] - CampusHardwareLogger - Account request #3 for 'Lance55' approved.
+2026-09-03 10:59:55 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-03 11:00:05 - [INFO] - CampusHardwareLogger - User 'Lance55' logged in successfully as 'User'.
+2026-09-03 11:00:45 - [INFO] - CampusHardwareLogger - Borrow cart submitted by 'Lance55': 1 x 'Arduino Uno', 5 x 'LED (GREEN)' (batch Lance55-1788404445459).
+2026-09-03 11:00:51 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-03 11:01:03 - [INFO] - CampusHardwareLogger - User 'Lance45' logged in successfully as 'Admin'.
+2026-09-03 11:01:13 - [INFO] - CampusHardwareLogger - Borrow request #7 for 'Lance55' approved.
+2026-09-10 07:44:52 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-10 07:45:17 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in successfully as 'SuperAdmin'.
+2026-09-11 10:49:54 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-11 16:40:24 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 16:40:24 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.112.206.25:5000
+2026-09-11 16:40:24 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 16:40:24 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 16:40:25 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 16:40:26 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 16:40:26 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-11 16:42:24 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 16:42:24 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.112.206.25:5000
+2026-09-11 16:42:24 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 16:42:24 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 16:42:26 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 16:42:26 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 16:42:26 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-11 16:43:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:43:50] "GET / HTTP/1.1" 302 -
+2026-09-11 16:43:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:43:50] "GET /login HTTP/1.1" 200 -
+2026-09-11 16:43:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:43:50] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:43:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:43:50] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:43:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:43:51] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-11 16:44:13 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-11 16:44:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:13] "POST /login HTTP/1.1" 302 -
+2026-09-11 16:44:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:13] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:44:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:13] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:44:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:13] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:44:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:21] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 16:44:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:22] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:44:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:22] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:44:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:23] "GET /accounts HTTP/1.1" 200 -
+2026-09-11 16:44:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:23] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:44:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:23] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:44:24 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:24] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:44:24 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:24] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:44:24 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:44:24] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:46:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:35] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:46:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:35] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:46:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:35] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:46:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:36] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-11 16:46:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:42] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:46:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:42] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:46:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:42] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:46:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:42] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-11 16:46:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:43] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:46:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:43] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:46:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:43] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:46:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:43] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:46:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:44] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:46:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:45] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:46:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:45] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:46:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:45] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:46:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:45] "GET /static/js/main.js HTTP/1.1" 404 -
+2026-09-11 16:46:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:45] "GET /static/css/main.css HTTP/1.1" 404 -
+2026-09-11 16:46:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:46:45] "GET /favicon.ico HTTP/1.1" 404 -
+2026-09-11 16:47:50 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 16:47:50 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.112.206.25:5000
+2026-09-11 16:47:50 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 16:47:50 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 16:47:51 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 16:47:51 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 16:47:51 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-11 16:48:20 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:20] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:48:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:21] "GET /static/css/main.css HTTP/1.1" 200 -
+2026-09-11 16:48:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:21] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-09-11 16:48:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:26] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 16:48:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:26] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:48:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:26] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:48:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:27] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:48:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:27] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:48:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:27] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:48:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:27] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 16:48:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:27] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:48:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:27] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:48:29 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-11 16:48:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:29] "GET /logout HTTP/1.1" 302 -
+2026-09-11 16:48:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:29] "GET /login HTTP/1.1" 200 -
+2026-09-11 16:48:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:29] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:48:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:29] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:48:36 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-11 16:48:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:36] "POST /login HTTP/1.1" 302 -
+2026-09-11 16:48:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:36] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:48:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:36] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:48:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:36] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:48:57 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:57] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 16:48:57 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:57] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:48:57 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:48:57] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:49:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:05] "GET /accounts HTTP/1.1" 200 -
+2026-09-11 16:49:06 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:06] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:49:06 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:06] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:49:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:08] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:49:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:08] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:49:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:08] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:49:14 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-11 16:49:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:14] "GET /logout HTTP/1.1" 302 -
+2026-09-11 16:49:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:14] "GET /login HTTP/1.1" 200 -
+2026-09-11 16:49:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:14] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:49:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:14] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:49:32 - [INFO] - CampusHardwareLogger - User 'Lance45' logged in as 'Admin'.
+2026-09-11 16:49:32 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:32] "POST /login HTTP/1.1" 302 -
+2026-09-11 16:49:32 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:32] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:49:32 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:32] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:49:32 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:32] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:49:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:48] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 16:49:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:48] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:49:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:49:48] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:50:00 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:00] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:50:00 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:00] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:50:00 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:00] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:50:01 - [INFO] - CampusHardwareLogger - User 'Lance45' logged out.
+2026-09-11 16:50:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:01] "GET /logout HTTP/1.1" 302 -
+2026-09-11 16:50:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:01] "GET /login HTTP/1.1" 200 -
+2026-09-11 16:50:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:01] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:50:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:01] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:50:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:15] "POST /login HTTP/1.1" 302 -
+2026-09-11 16:50:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:15] "GET /reset-password HTTP/1.1" 200 -
+2026-09-11 16:50:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:15] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:50:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:15] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:50:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:28] "GET /login HTTP/1.1" 200 -
+2026-09-11 16:50:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:28] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:50:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:28] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:50:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:42] "POST /login HTTP/1.1" 302 -
+2026-09-11 16:50:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:42] "GET /reset-password HTTP/1.1" 200 -
+2026-09-11 16:50:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:42] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:50:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:42] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:50:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:49] "GET /login HTTP/1.1" 200 -
+2026-09-11 16:50:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:49] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:50:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:50:49] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:51:04 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in as 'User'.
+2026-09-11 16:51:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:04] "POST /login HTTP/1.1" 302 -
+2026-09-11 16:51:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:04] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:51:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:04] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:51:04 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:04] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:51:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:22] "POST /cart/add HTTP/1.1" 200 -
+2026-09-11 16:51:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:29] "POST /cart/add HTTP/1.1" 200 -
+2026-09-11 16:51:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:33] "POST /cart/add HTTP/1.1" 200 -
+2026-09-11 16:51:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:34] "GET /cart HTTP/1.1" 200 -
+2026-09-11 16:51:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:34] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:51:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:34] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:51:37 - [INFO] - CampusHardwareLogger - Borrow cart submitted by 'Lance122' (batch Lance122-1789116697077).
+2026-09-11 16:51:37 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:37] "POST /cart/submit HTTP/1.1" 302 -
+2026-09-11 16:51:37 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:37] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:51:37 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:37] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:51:37 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:37] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:51:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:43] "GET /cart HTTP/1.1" 200 -
+2026-09-11 16:51:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:43] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:51:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:43] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:51:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:44] "GET /profile HTTP/1.1" 200 -
+2026-09-11 16:51:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:44] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:51:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:44] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:51:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:49] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:51:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:49] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:51:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:51:49] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:52:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:46] "GET /profile HTTP/1.1" 200 -
+2026-09-11 16:52:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:46] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:52:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:46] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:52:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:49] "GET /cart HTTP/1.1" 200 -
+2026-09-11 16:52:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:49] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:52:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:49] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:52:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:50] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:52:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:50] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:52:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:50] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:52:52 - [INFO] - CampusHardwareLogger - User 'Lance122' logged out.
+2026-09-11 16:52:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:52] "GET /logout HTTP/1.1" 302 -
+2026-09-11 16:52:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:52] "GET /login HTTP/1.1" 200 -
+2026-09-11 16:52:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:52] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:52:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:52] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:52:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:55] "GET /register HTTP/1.1" 200 -
+2026-09-11 16:52:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:55] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:52:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:52:55] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:53:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:53:11] "GET /login HTTP/1.1" 200 -
+2026-09-11 16:53:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:53:11] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:53:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:53:11] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:53:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:53:13] "GET /reset-password HTTP/1.1" 200 -
+2026-09-11 16:53:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:53:13] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:53:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:53:13] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:53:24 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:53:24] "GET /login HTTP/1.1" 200 -
+2026-09-11 16:53:24 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:53:24] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:53:24 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:53:24] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:55:07 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-11 16:55:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:07] "POST /login HTTP/1.1" 302 -
+2026-09-11 16:55:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:07] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:55:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:07] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:55:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:07] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:55:20 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:20] "GET /accounts HTTP/1.1" 200 -
+2026-09-11 16:55:20 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:20] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:55:20 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:20] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:55:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:22] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 16:55:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:22] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:55:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:22] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:55:29 - [INFO] - CampusHardwareLogger - Borrow #8 approved.
+2026-09-11 16:55:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:29] "POST /approvals/borrow/approve/8 HTTP/1.1" 302 -
+2026-09-11 16:55:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:29] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 16:55:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:29] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:55:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:29] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:55:38 - [INFO] - CampusHardwareLogger - Borrow #9 approved.
+2026-09-11 16:55:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:38] "POST /approvals/borrow/approve/9 HTTP/1.1" 302 -
+2026-09-11 16:55:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:38] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 16:55:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:38] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:55:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:38] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:55:42 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-11 16:55:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:42] "GET /logout HTTP/1.1" 302 -
+2026-09-11 16:55:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:42] "GET /login HTTP/1.1" 200 -
+2026-09-11 16:55:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:42] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:55:42 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:42] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:55:45 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in as 'User'.
+2026-09-11 16:55:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:45] "POST /login HTTP/1.1" 302 -
+2026-09-11 16:55:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:45] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:55:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:45] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:55:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:45] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:55:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:47] "GET /profile HTTP/1.1" 200 -
+2026-09-11 16:55:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:47] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:55:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:47] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:55:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:47] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:55:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:48] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:55:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:48] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:55:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:54] "GET /cart HTTP/1.1" 200 -
+2026-09-11 16:55:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:54] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:55:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:54] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:55:57 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:57] "GET /profile HTTP/1.1" 200 -
+2026-09-11 16:55:57 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:57] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:55:57 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:55:57] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:56:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:56:01] "GET /cart HTTP/1.1" 200 -
+2026-09-11 16:56:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:56:01] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:56:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:56:01] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 16:56:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:56:01] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 16:56:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:56:01] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 16:56:01 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 16:56:01] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:25:39 - [INFO] - werkzeug -  * Detected change in 'c:\\Users\\ortiz\\Documents\\NU\\10th Term\\Software Design\\Ortiz\\Exp 3\\supplementary_auth\\app.py', reloading
+2026-09-11 17:25:39 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 17:25:39 - [INFO] - werkzeug -  * Detected change in 'C:\\Users\\ortiz\\Documents\\NU\\10th Term\\Software Design\\Ortiz\\Exp 3\\supplementary_auth\\app.py', reloading
+2026-09-11 17:25:39 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 17:25:43 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 17:25:43 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 17:25:43 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 17:25:43 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-11 17:25:43 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 17:25:43 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-11 17:26:54 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 17:26:54 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.112.206.25:5000
+2026-09-11 17:26:54 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 17:26:54 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 17:26:55 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 17:26:55 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 17:26:55 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-11 17:27:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:07] "GET / HTTP/1.1" 302 -
+2026-09-11 17:27:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:08] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 17:27:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:08] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:27:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:08] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:27:11 - [INFO] - CampusHardwareLogger - User 'Lance122' logged out.
+2026-09-11 17:27:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:11] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:27:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:11] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:27:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:11] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:27:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:11] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:27:16 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-11 17:27:16 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:16] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:27:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:17] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 17:27:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:17] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:27:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:17] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:27:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:21] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 17:27:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:21] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:27:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:21] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:27:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:22] "GET /accounts HTTP/1.1" 200 -
+2026-09-11 17:27:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:22] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:27:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:22] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:27:23 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-11 17:27:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:23] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:27:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:23] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:27:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:23] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:27:23 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:23] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:27:28 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in as 'User'.
+2026-09-11 17:27:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:28] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:27:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:28] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 17:27:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:28] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:27:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:28] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:27:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:35] "GET /cart HTTP/1.1" 200 -
+2026-09-11 17:27:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:35] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:27:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:35] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:27:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:36] "GET /my-borrows HTTP/1.1" 200 -
+2026-09-11 17:27:37 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:37] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:27:37 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:37] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:27:39 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:39] "GET /profile HTTP/1.1" 200 -
+2026-09-11 17:27:39 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:39] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:27:39 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:39] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:27:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:41] "GET /my-borrows HTTP/1.1" 200 -
+2026-09-11 17:27:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:41] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:27:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:27:41] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:28:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:11] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 17:28:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:12] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:28:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:12] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:28:25 - [INFO] - CampusHardwareLogger - User 'Lance122' logged out.
+2026-09-11 17:28:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:25] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:28:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:25] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:28:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:25] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:28:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:25] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:28:28 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-11 17:28:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:28] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:28:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:28] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 17:28:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:28] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:28:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:28:28] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:29:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:44] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 17:29:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:44] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:29:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:44] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:29:47 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-11 17:29:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:47] "GET /logout HTTP/1.1" 302 -
+2026-09-11 17:29:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:47] "GET /login HTTP/1.1" 200 -
+2026-09-11 17:29:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:47] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:29:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:47] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:29:52 - [INFO] - CampusHardwareLogger - User 'Lance45' logged in as 'Admin'.
+2026-09-11 17:29:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:52] "POST /login HTTP/1.1" 302 -
+2026-09-11 17:29:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:52] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 17:29:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:52] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:29:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:29:52] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:30:00 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:30:00] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 17:30:00 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:30:00] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:30:00 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:30:00] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:30:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:30:15] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 17:30:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:30:15] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:30:15 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:30:15] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:57:33 - [INFO] - werkzeug -  * Detected change in 'c:\\Users\\ortiz\\Documents\\NU\\10th Term\\Software Design\\Ortiz\\Exp 3\\supplementary_auth\\app.py', reloading
+2026-09-11 17:57:33 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 17:57:34 - [INFO] - werkzeug -  * Detected change in 'C:\\Users\\ortiz\\Documents\\NU\\10th Term\\Software Design\\Ortiz\\Exp 3\\supplementary_auth\\app.py', reloading
+2026-09-11 17:57:35 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 17:57:38 - [INFO] - CampusHardwareLogger - Migration: added initial_quantity to hardware
+2026-09-11 17:57:38 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 17:57:38 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 17:57:39 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-11 17:57:39 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 17:57:39 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 17:57:39 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-11 17:58:03 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 17:58:07 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 17:58:08 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.112.206.25:5000
+2026-09-11 17:58:08 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-11 17:58:08 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-11 17:58:09 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-11 17:58:09 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-11 17:58:09 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-11 17:58:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:58:19] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 17:58:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:58:19] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:58:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:58:19] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:58:44 - [INFO] - CampusHardwareLogger - Hardware ID 9 updated.
+2026-09-11 17:58:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:58:44] "POST /inventory/update/9 HTTP/1.1" 302 -
+2026-09-11 17:58:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:58:44] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 17:58:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:58:44] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:58:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:58:44] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:59:05 - [INFO] - CampusHardwareLogger - Hardware ID 5 updated.
+2026-09-11 17:59:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:59:05] "POST /inventory/update/5 HTTP/1.1" 302 -
+2026-09-11 17:59:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:59:05] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 17:59:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:59:05] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:59:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:59:05] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:59:12 - [INFO] - CampusHardwareLogger - Hardware ID 1 updated.
+2026-09-11 17:59:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:59:12] "POST /inventory/update/1 HTTP/1.1" 302 -
+2026-09-11 17:59:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:59:12] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 17:59:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:59:12] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:59:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:59:12] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 17:59:25 - [INFO] - CampusHardwareLogger - Hardware ID 10 updated.
+2026-09-11 17:59:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:59:25] "POST /inventory/update/10 HTTP/1.1" 302 -
+2026-09-11 17:59:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:59:25] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 17:59:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:59:25] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 17:59:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 17:59:25] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:00:18 - [INFO] - CampusHardwareLogger - Hardware ID 8 updated.
+2026-09-11 18:00:18 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:00:18] "POST /inventory/update/8 HTTP/1.1" 302 -
+2026-09-11 18:00:18 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:00:18] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 18:00:18 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:00:18] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:00:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:00:19] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:00:38 - [INFO] - CampusHardwareLogger - Hardware ID 12 updated.
+2026-09-11 18:00:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:00:38] "POST /inventory/update/12 HTTP/1.1" 302 -
+2026-09-11 18:00:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:00:38] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 18:00:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:00:38] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:00:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:00:38] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:01:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:01:45] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 18:01:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:01:45] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:01:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:01:45] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:01:51 - [INFO] - CampusHardwareLogger - User 'Lance45' logged out.
+2026-09-11 18:01:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:01:51] "GET /logout HTTP/1.1" 302 -
+2026-09-11 18:01:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:01:51] "GET /login HTTP/1.1" 200 -
+2026-09-11 18:01:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:01:51] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:01:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:01:51] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:01:57 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-11 18:01:57 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:01:57] "POST /login HTTP/1.1" 302 -
+2026-09-11 18:01:57 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:01:57] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 18:01:57 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:01:57] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:01:57 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:01:57] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:02:36 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-11 18:02:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:02:36] "GET /logout HTTP/1.1" 302 -
+2026-09-11 18:02:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:02:36] "GET /login HTTP/1.1" 200 -
+2026-09-11 18:02:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:02:36] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:02:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:02:36] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:02:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:02:41] "GET /register HTTP/1.1" 200 -
+2026-09-11 18:02:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:02:41] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:02:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:02:41] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:03:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:03:48] "POST /register HTTP/1.1" 200 -
+2026-09-11 18:03:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:03:48] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:03:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:03:48] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:04:27 - [INFO] - CampusHardwareLogger - Account request submitted for 'Lance16'.
+2026-09-11 18:04:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:27] "POST /register HTTP/1.1" 302 -
+2026-09-11 18:04:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:27] "GET /login HTTP/1.1" 200 -
+2026-09-11 18:04:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:27] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:04:27 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:27] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:04:31 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-11 18:04:31 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:31] "POST /login HTTP/1.1" 302 -
+2026-09-11 18:04:31 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:31] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 18:04:31 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:31] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:04:31 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:31] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:04:32 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:32] "GET /accounts HTTP/1.1" 200 -
+2026-09-11 18:04:32 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:32] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:04:32 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:32] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:04:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:34] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 18:04:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:34] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:04:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:34] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:04:39 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:39] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 18:04:39 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:39] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:04:39 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:04:39] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:06:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:06:29] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 18:06:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:06:29] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:06:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:06:29] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:06:45 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:06:45] "GET /accounts HTTP/1.1" 200 -
+2026-09-11 18:06:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:06:46] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:06:46 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:06:46] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:06:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:06:47] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 18:06:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:06:47] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:06:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:06:47] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:06:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:06:47] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 18:06:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:06:47] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:06:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:06:47] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:10:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:47] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 18:10:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:47] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:10:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:47] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:10:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:49] "GET /accounts HTTP/1.1" 200 -
+2026-09-11 18:10:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:49] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:10:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:49] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:10:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:51] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 18:10:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:51] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:10:51 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:51] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:10:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:54] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 18:10:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:54] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:10:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:54] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:10:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:55] "GET /accounts HTTP/1.1" 200 -
+2026-09-11 18:10:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:55] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:10:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:10:55] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:46:21 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-11 18:46:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:46:21] "GET /logout HTTP/1.1" 302 -
+2026-09-11 18:46:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:46:21] "GET /login HTTP/1.1" 200 -
+2026-09-11 18:46:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:46:21] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:46:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:46:21] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:57:40 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in as 'User'.
+2026-09-11 18:57:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:57:40] "POST /login HTTP/1.1" 302 -
+2026-09-11 18:57:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:57:40] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 18:57:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:57:40] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:57:40 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:57:40] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:58:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:58:03] "POST /cart/add HTTP/1.1" 200 -
+2026-09-11 18:58:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:58:05] "GET /cart HTTP/1.1" 200 -
+2026-09-11 18:58:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:58:05] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:58:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:58:05] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:58:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:58:07] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 18:58:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:58:07] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:58:07 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:58:07] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:58:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:58:29] "POST /cart/add HTTP/1.1" 200 -
+2026-09-11 18:58:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:58:33] "GET /cart HTTP/1.1" 200 -
+2026-09-11 18:58:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:58:34] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:58:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:58:34] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:59:13 - [INFO] - CampusHardwareLogger - Borrow cart submitted by 'Lance122' (batch Lance122-1789124353483).
+2026-09-11 18:59:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:13] "POST /cart/submit HTTP/1.1" 302 -
+2026-09-11 18:59:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:13] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 18:59:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:13] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:59:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:13] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:59:17 - [INFO] - CampusHardwareLogger - User 'Lance122' logged out.
+2026-09-11 18:59:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:17] "GET /logout HTTP/1.1" 302 -
+2026-09-11 18:59:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:17] "GET /login HTTP/1.1" 200 -
+2026-09-11 18:59:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:17] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:59:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:17] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:59:20 - [INFO] - CampusHardwareLogger - User 'Lance45' logged in as 'Admin'.
+2026-09-11 18:59:20 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:20] "POST /login HTTP/1.1" 302 -
+2026-09-11 18:59:20 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:20] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 18:59:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:21] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 18:59:21 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:21] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:59:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:22] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 18:59:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:22] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 18:59:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 18:59:22] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:00:12 - [INFO] - CampusHardwareLogger - Borrow #12 approved.
+2026-09-11 19:00:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:00:12] "POST /approvals/borrow/approve/12 HTTP/1.1" 302 -
+2026-09-11 19:00:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:00:12] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 19:00:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:00:12] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:00:12 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:00:12] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:00:13 - [INFO] - CampusHardwareLogger - Borrow #13 approved.
+2026-09-11 19:00:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:00:13] "POST /approvals/borrow/approve/13 HTTP/1.1" 302 -
+2026-09-11 19:00:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:00:13] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 19:00:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:00:13] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:00:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:00:13] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:00:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:00:33] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 19:00:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:00:33] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:00:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:00:33] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:01:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:01:13] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 19:01:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:01:13] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:01:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:01:13] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:01:58 - [INFO] - CampusHardwareLogger - Borrow #12 returned.
+2026-09-11 19:01:58 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:01:58] "POST /approvals/borrow/return/12 HTTP/1.1" 302 -
+2026-09-11 19:01:58 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:01:58] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 19:01:58 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:01:58] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:01:58 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:01:58] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:02:03 - [INFO] - CampusHardwareLogger - Borrow #13 returned.
+2026-09-11 19:02:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:02:03] "POST /approvals/borrow/return/13 HTTP/1.1" 302 -
+2026-09-11 19:02:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:02:03] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 19:02:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:02:03] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:02:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:02:03] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:02:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:02:05] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 19:02:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:02:05] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:02:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:02:05] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:02:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:02:22] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 19:02:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:02:22] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:02:22 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:02:22] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:18:26 - [INFO] - CampusHardwareLogger - User 'Lance45' logged out.
+2026-09-11 19:18:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:18:26] "GET /logout HTTP/1.1" 302 -
+2026-09-11 19:18:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:18:26] "GET /login HTTP/1.1" 200 -
+2026-09-11 19:18:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:18:26] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:18:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:18:26] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:18:47 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-11 19:18:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:18:47] "POST /login HTTP/1.1" 302 -
+2026-09-11 19:18:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:18:47] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 19:18:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:18:47] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:18:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:18:47] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:21:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:21:13] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 19:21:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:21:13] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:21:13 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:21:13] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:21:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:21:26] "GET /accounts HTTP/1.1" 200 -
+2026-09-11 19:21:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:21:26] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:21:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:21:26] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:22:54 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-11 19:22:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:22:54] "GET /logout HTTP/1.1" 302 -
+2026-09-11 19:22:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:22:54] "GET /login HTTP/1.1" 200 -
+2026-09-11 19:22:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:22:54] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:22:54 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:22:54] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:22:58 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:22:58] "GET /register HTTP/1.1" 200 -
+2026-09-11 19:22:58 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:22:58] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:22:58 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:22:58] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:25:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:25:17] "GET /login HTTP/1.1" 200 -
+2026-09-11 19:25:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:25:17] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:25:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:25:17] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:25:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:25:19] "GET /reset-password HTTP/1.1" 200 -
+2026-09-11 19:25:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:25:19] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:25:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:25:19] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:26:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:26:11] "GET /login HTTP/1.1" 200 -
+2026-09-11 19:26:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:26:11] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:26:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:26:11] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:26:16 - [INFO] - CampusHardwareLogger - User 'Lance45' logged in as 'Admin'.
+2026-09-11 19:26:16 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:26:16] "POST /login HTTP/1.1" 302 -
+2026-09-11 19:26:16 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:26:16] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 19:26:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:26:17] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:26:17 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:26:17] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:26:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:26:34] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 19:26:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:26:34] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:26:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:26:34] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:28:26 - [INFO] - CampusHardwareLogger - User 'Lance45' logged out.
+2026-09-11 19:28:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:26] "GET /logout HTTP/1.1" 302 -
+2026-09-11 19:28:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:26] "GET /login HTTP/1.1" 200 -
+2026-09-11 19:28:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:26] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:28:26 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:26] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:28:28 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in as 'User'.
+2026-09-11 19:28:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:28] "POST /login HTTP/1.1" 302 -
+2026-09-11 19:28:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:28] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 19:28:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:28] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:28:28 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:28] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:28:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:33] "GET /cart HTTP/1.1" 200 -
+2026-09-11 19:28:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:33] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:28:33 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:33] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:28:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:34] "GET /my-borrows HTTP/1.1" 200 -
+2026-09-11 19:28:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:34] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:28:34 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:34] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:28:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:36] "GET /profile HTTP/1.1" 200 -
+2026-09-11 19:28:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:36] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:28:36 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:36] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:28:37 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:37] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 19:28:37 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:37] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:28:37 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:37] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:28:53 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:53] "GET /cart HTTP/1.1" 200 -
+2026-09-11 19:28:53 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:53] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:28:53 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:28:53] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:29:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:29:05] "GET /my-borrows HTTP/1.1" 200 -
+2026-09-11 19:29:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:29:05] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:29:05 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:29:05] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:29:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:29:19] "GET /profile HTTP/1.1" 200 -
+2026-09-11 19:29:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:29:19] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:29:19 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:29:19] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:30:02 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:30:02] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 19:30:02 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:30:02] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:30:02 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:30:02] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:30:03 - [INFO] - CampusHardwareLogger - User 'Lance122' logged out.
+2026-09-11 19:30:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:30:03] "GET /logout HTTP/1.1" 302 -
+2026-09-11 19:30:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:30:03] "GET /login HTTP/1.1" 200 -
+2026-09-11 19:30:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:30:03] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:30:03 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:30:03] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:37:25 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-11 19:37:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:25] "POST /login HTTP/1.1" 302 -
+2026-09-11 19:37:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:25] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 19:37:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:25] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:37:25 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:25] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:37:29 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:29] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 19:37:30 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:30] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:37:30 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:30] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:37:31 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-11 19:37:31 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:31] "GET /logout HTTP/1.1" 302 -
+2026-09-11 19:37:31 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:31] "GET /login HTTP/1.1" 200 -
+2026-09-11 19:37:31 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:31] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:37:31 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:31] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:37:35 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in as 'User'.
+2026-09-11 19:37:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:35] "POST /login HTTP/1.1" 302 -
+2026-09-11 19:37:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:35] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 19:37:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:35] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:37:35 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:35] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:37:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:38] "GET /cart HTTP/1.1" 200 -
+2026-09-11 19:37:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:38] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:37:38 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:38] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:37:39 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:39] "GET /my-borrows HTTP/1.1" 200 -
+2026-09-11 19:37:39 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:39] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:37:39 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:39] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 19:37:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:41] "GET /profile HTTP/1.1" 200 -
+2026-09-11 19:37:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:41] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 19:37:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 19:37:41] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 20:25:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:25:43] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 20:25:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:25:44] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 20:25:44 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:25:44] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 20:25:50 - [INFO] - CampusHardwareLogger - User 'Lance122' logged out.
+2026-09-11 20:25:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:25:50] "GET /logout HTTP/1.1" 302 -
+2026-09-11 20:25:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:25:50] "GET /login HTTP/1.1" 200 -
+2026-09-11 20:25:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:25:50] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 20:25:50 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:25:50] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 20:25:52 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-11 20:25:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:25:52] "POST /login HTTP/1.1" 302 -
+2026-09-11 20:25:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:25:52] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 20:25:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:25:52] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 20:25:52 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:25:52] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 20:27:08 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-11 20:27:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:27:08] "GET /logout HTTP/1.1" 302 -
+2026-09-11 20:27:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:27:08] "GET /login HTTP/1.1" 200 -
+2026-09-11 20:27:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:27:08] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 20:27:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:27:08] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 20:27:14 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in as 'User'.
+2026-09-11 20:27:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:27:14] "POST /login HTTP/1.1" 302 -
+2026-09-11 20:27:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:27:14] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 20:27:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:27:14] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 20:27:14 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:27:14] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 20:58:08 - [INFO] - CampusHardwareLogger - User 'Lance122' logged out.
+2026-09-11 20:58:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:58:08] "GET /logout HTTP/1.1" 302 -
+2026-09-11 20:58:08 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:58:08] "GET /login HTTP/1.1" 200 -
+2026-09-11 20:58:09 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:58:09] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 20:58:09 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:58:09] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 20:58:11 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-11 20:58:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:58:11] "POST /login HTTP/1.1" 302 -
+2026-09-11 20:58:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:58:11] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 20:58:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:58:11] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 20:58:11 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 20:58:11] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 22:07:48 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-11 22:07:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:07:48] "GET /logout HTTP/1.1" 302 -
+2026-09-11 22:07:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:07:48] "GET /login HTTP/1.1" 200 -
+2026-09-11 22:07:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:07:49] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 22:07:49 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:07:49] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 22:07:55 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-11 22:07:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:07:55] "POST /login HTTP/1.1" 302 -
+2026-09-11 22:07:55 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:07:55] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 22:07:56 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:07:56] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 22:07:56 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:07:56] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 22:11:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:11:41] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 22:11:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:11:41] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 22:11:41 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:11:41] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 22:11:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:11:43] "GET /accounts HTTP/1.1" 200 -
+2026-09-11 22:11:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:11:43] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 22:11:43 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:11:43] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 22:11:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:11:47] "GET /approvals HTTP/1.1" 200 -
+2026-09-11 22:11:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:11:47] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 22:11:47 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:11:47] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-11 22:11:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:11:48] "GET /catalog HTTP/1.1" 200 -
+2026-09-11 22:11:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:11:48] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-11 22:11:48 - [INFO] - werkzeug - 127.0.0.1 - - [11/Sep/2026 22:11:48] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:04:50 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-12 05:04:50 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-12 05:04:50 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-12 05:04:50 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.33:5000
+2026-09-12 05:04:50 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-12 05:04:50 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.33:5000
+2026-09-12 05:04:50 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-12 05:04:50 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-12 05:04:50 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-12 05:04:50 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.33:5000
+2026-09-12 05:04:50 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-12 05:04:50 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-12 05:04:51 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-12 05:04:52 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.33:5000
+2026-09-12 05:04:52 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-12 05:04:52 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-12 05:04:57 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-12 05:04:57 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-12 05:04:57 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-12 05:04:57 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-12 05:04:57 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-12 05:04:58 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-12 05:04:58 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-12 05:04:58 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-12 05:04:58 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-12 05:04:59 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-12 05:04:59 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-12 05:04:59 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-12 05:05:10 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:10] "GET /dashboard HTTP/1.1" 404 -
+2026-09-12 05:05:16 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:16] "GET / HTTP/1.1" 302 -
+2026-09-12 05:05:16 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:16] "GET /login HTTP/1.1" 200 -
+2026-09-12 05:05:17 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:17] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-09-12 05:05:17 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:17] "GET /static/css/main.css HTTP/1.1" 200 -
+2026-09-12 05:05:21 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-12 05:05:21 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:21] "POST /login HTTP/1.1" 302 -
+2026-09-12 05:05:21 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:21] "GET /catalog HTTP/1.1" 200 -
+2026-09-12 05:05:21 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:21] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:05:21 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:21] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:05:33 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:33] "GET /approvals HTTP/1.1" 200 -
+2026-09-12 05:05:33 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:33] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:05:33 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:33] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:05:34 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:34] "GET /accounts HTTP/1.1" 200 -
+2026-09-12 05:05:34 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:34] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:05:34 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:34] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:05:35 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:35] "GET /approvals HTTP/1.1" 200 -
+2026-09-12 05:05:35 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:35] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:05:35 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:35] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:05:36 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:36] "GET /catalog HTTP/1.1" 200 -
+2026-09-12 05:05:36 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:36] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:05:36 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:05:36] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:07:10 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-12 05:07:10 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.33:5000
+2026-09-12 05:07:10 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-12 05:07:10 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-12 05:07:12 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-12 05:07:13 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-12 05:07:13 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-12 05:07:14 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:14] "GET /catalog HTTP/1.1" 200 -
+2026-09-12 05:07:14 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:14] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:07:14 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:14] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:07:19 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-12 05:07:19 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:19] "GET /logout HTTP/1.1" 302 -
+2026-09-12 05:07:20 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:20] "GET /login HTTP/1.1" 200 -
+2026-09-12 05:07:20 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:20] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:07:20 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:20] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:07:24 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in as 'User'.
+2026-09-12 05:07:24 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:24] "POST /login HTTP/1.1" 302 -
+2026-09-12 05:07:24 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:24] "GET /catalog HTTP/1.1" 200 -
+2026-09-12 05:07:24 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:24] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:07:24 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:24] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:07:49 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:49] "GET /cart HTTP/1.1" 200 -
+2026-09-12 05:07:49 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:49] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:07:49 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:49] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:07:51 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:51] "GET /my-borrows HTTP/1.1" 200 -
+2026-09-12 05:07:51 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:51] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:07:51 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:51] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:07:53 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:53] "GET /profile HTTP/1.1" 200 -
+2026-09-12 05:07:53 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:53] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:07:53 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:53] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:07:55 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:55] "GET /catalog HTTP/1.1" 200 -
+2026-09-12 05:07:55 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:55] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:07:55 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:55] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:07:57 - [INFO] - CampusHardwareLogger - User 'Lance122' logged out.
+2026-09-12 05:07:57 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:57] "GET /logout HTTP/1.1" 302 -
+2026-09-12 05:07:57 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:57] "GET /login HTTP/1.1" 200 -
+2026-09-12 05:07:57 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:57] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:07:57 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:07:57] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:08:01 - [INFO] - CampusHardwareLogger - User 'Lance45' logged in as 'Admin'.
+2026-09-12 05:08:01 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:08:01] "POST /login HTTP/1.1" 302 -
+2026-09-12 05:08:01 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:08:01] "GET /catalog HTTP/1.1" 200 -
+2026-09-12 05:08:01 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:08:01] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:08:01 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:08:01] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:08:43 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-12 05:08:43 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.8.33:5000
+2026-09-12 05:08:43 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-12 05:08:43 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-12 05:08:44 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-12 05:08:44 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-12 05:08:44 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-12 05:08:47 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:08:47] "GET /catalog HTTP/1.1" 200 -
+2026-09-12 05:08:47 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:08:47] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:08:47 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:08:47] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:08:56 - [INFO] - CampusHardwareLogger - CSV exported by 'Lance45'.
+2026-09-12 05:08:56 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:08:56] "GET /inventory/export-csv HTTP/1.1" 200 -
+2026-09-12 05:19:33 - [INFO] - CampusHardwareLogger - User 'Lance45' logged out.
+2026-09-12 05:19:33 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:19:33] "GET /logout HTTP/1.1" 302 -
+2026-09-12 05:19:33 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:19:33] "GET /login HTTP/1.1" 200 -
+2026-09-12 05:19:33 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:19:33] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:19:33 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:19:33] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:19:40 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-12 05:19:40 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:19:40] "POST /login HTTP/1.1" 302 -
+2026-09-12 05:19:40 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:19:40] "GET /catalog HTTP/1.1" 200 -
+2026-09-12 05:19:40 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:19:40] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:19:40 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:19:40] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:20:58 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-12 05:20:58 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:20:58] "GET /logout HTTP/1.1" 302 -
+2026-09-12 05:20:58 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:20:58] "GET /login HTTP/1.1" 200 -
+2026-09-12 05:20:59 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:20:59] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:20:59 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:20:59] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-12 05:21:05 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in as 'User'.
+2026-09-12 05:21:05 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:21:05] "POST /login HTTP/1.1" 302 -
+2026-09-12 05:21:05 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:21:05] "GET /catalog HTTP/1.1" 200 -
+2026-09-12 05:21:06 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:21:06] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-12 05:21:06 - [INFO] - werkzeug - 127.0.0.1 - - [12/Sep/2026 05:21:06] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:11:20 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-17 07:11:20 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.1.96.142:5000
+2026-09-17 07:11:20 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-17 07:11:20 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-17 07:11:24 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-17 07:11:24 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-17 07:11:24 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-17 07:11:29 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:29] "GET / HTTP/1.1" 302 -
+2026-09-17 07:11:29 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:29] "GET /login HTTP/1.1" 200 -
+2026-09-17 07:11:30 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:30] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:11:30 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:30] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:11:46 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged in as 'SuperAdmin'.
+2026-09-17 07:11:46 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:46] "POST /login HTTP/1.1" 302 -
+2026-09-17 07:11:46 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:46] "GET /catalog HTTP/1.1" 200 -
+2026-09-17 07:11:46 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:46] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:11:46 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:46] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:11:51 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:51] "GET /approvals HTTP/1.1" 200 -
+2026-09-17 07:11:51 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:51] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:11:51 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:51] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:11:56 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:56] "GET /accounts HTTP/1.1" 200 -
+2026-09-17 07:11:56 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:56] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:11:56 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:11:56] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:12:00 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:00] "GET /catalog HTTP/1.1" 200 -
+2026-09-17 07:12:00 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:00] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:12:00 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:00] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:12:05 - [INFO] - CampusHardwareLogger - User 'Lance1015' logged out.
+2026-09-17 07:12:05 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:05] "GET /logout HTTP/1.1" 302 -
+2026-09-17 07:12:05 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:05] "GET /login HTTP/1.1" 200 -
+2026-09-17 07:12:06 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:06] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:12:06 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:06] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:12:12 - [INFO] - CampusHardwareLogger - User 'Lance122' logged in as 'User'.
+2026-09-17 07:12:12 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:12] "POST /login HTTP/1.1" 302 -
+2026-09-17 07:12:12 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:12] "GET /catalog HTTP/1.1" 200 -
+2026-09-17 07:12:12 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:12] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:12:12 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:12] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:12:19 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:19] "GET /my-borrows HTTP/1.1" 200 -
+2026-09-17 07:12:19 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:19] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:12:19 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:19] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:12:28 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:28] "GET /cart HTTP/1.1" 200 -
+2026-09-17 07:12:28 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:28] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:12:28 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:28] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:12:31 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:31] "GET /catalog HTTP/1.1" 200 -
+2026-09-17 07:12:31 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:31] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:12:31 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:31] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:12:45 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:45] "GET /profile HTTP/1.1" 200 -
+2026-09-17 07:12:45 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:45] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:12:45 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:12:45] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:13:04 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:13:04] "GET /catalog HTTP/1.1" 200 -
+2026-09-17 07:13:04 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:13:04] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:13:04 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:13:04] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:13:10 - [INFO] - CampusHardwareLogger - User 'Lance122' logged out.
+2026-09-17 07:13:10 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:13:10] "GET /logout HTTP/1.1" 302 -
+2026-09-17 07:13:10 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:13:10] "GET /login HTTP/1.1" 200 -
+2026-09-17 07:13:10 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:13:10] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:13:10 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:13:10] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:42:59 - [INFO] - CampusHardwareLogger - Database initialized successfully.
+2026-09-17 07:44:11 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-17 07:44:11 - [INFO] - werkzeug - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.1.96.142:5000
+2026-09-17 07:44:11 - [INFO] - werkzeug - Press CTRL+C to quit
+2026-09-17 07:44:11 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-17 07:44:13 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-17 07:44:13 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-17 07:44:13 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-17 07:44:18 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:44:18] "GET /login HTTP/1.1" 200 -
+2026-09-17 07:44:18 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:44:18] "GET /static/css/main.css HTTP/1.1" 304 -
+2026-09-17 07:44:18 - [INFO] - werkzeug - 127.0.0.1 - - [17/Sep/2026 07:44:18] "GET /static/js/main.js HTTP/1.1" 304 -
+2026-09-17 07:44:41 - [INFO] - werkzeug -  * Detected change in 'c:\\Users\\ortiz\\Documents\\NU\\10th Term\\Software Design\\Ortiz\\Exp 3\\supplementary_auth\\supplementary_auth.py', reloading
+2026-09-17 07:44:42 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-17 07:44:44 - [INFO] - CampusHardwareLogger - Database initialized.
+2026-09-17 07:44:44 - [WARNING] - werkzeug -  * Debugger is active!
+2026-09-17 07:44:44 - [INFO] - werkzeug -  * Debugger PIN: 125-927-153
+2026-09-17 07:45:41 - [INFO] - werkzeug -  * Detected change in 'c:\\Users\\ortiz\\Documents\\NU\\10th Term\\Software Design\\Ortiz\\Exp 3\\supplementary_auth\\supplementary_auth.py', reloading
+2026-09-17 07:45:41 - [INFO] - werkzeug -  * Restarting with stat
+2026-09-17 07:45:57 - [INFO] - CampusHardwareLogger - Database initialized successfully.
