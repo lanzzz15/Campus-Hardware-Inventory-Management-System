@@ -4,8 +4,11 @@ import logging
 import re
 import time
 import io
+import smtplib
+import random
 from datetime import datetime
 from functools import wraps
+from email.mime.text import MIMEText
 
 import psycopg
 from psycopg.rows import dict_row
@@ -26,6 +29,7 @@ import bcrypt
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "campus-hardware-secret-2025-change-in-prod")
+app.config["SESSION_COOKIE_SIZE"] = 4096
 
 # ==========================================
 # LOGGING
@@ -59,6 +63,41 @@ SUPER_ADMIN_PASSWORD = "Lance@1015"
 VALID_ROLES = (ROLE_USER, ROLE_ADMIN, ROLE_SUPER_ADMIN)
 PRIVILEGED_ROLES = (ROLE_ADMIN, ROLE_SUPER_ADMIN)
 MAX_FAILED_ATTEMPTS = 3
+
+# ==========================================
+# BREVO SMTP CONFIGURATION
+# ==========================================
+
+SMTP_SERVER = "smtp-relay.brevo.com"
+SMTP_PORT = 2525
+
+# TODO: Replace these with your actual Brevo SMTP credentials
+# Get these from: Brevo Dashboard → Your Name (top-right) → SMTP & API → SMTP tab
+SMTP_LOGIN = "bbf85d001@smtp-brevo.com"
+SMTP_PASSWORD = "xsmtpsib-7d8b2bf960ef472fce54d5d0ca00ce4b8d8970fd3a2c183da8b34e9195a90e81-CSyO7ujtzASNah3b"
+SMTP_FROM = "ortizlance15@gmail.com"
+
+
+def send_otp_email(receiver_email: str, otp: str, intent: str) -> bool:
+    """Sends a 6-digit OTP to receiver_email using Brevo SMTP."""
+    msg = MIMEText(
+        f"Your {intent} One-Time Password (OTP) is: {otp}\n\n"
+        f"Please enter this code to proceed. Do not share this code with anyone."
+    )
+    msg["Subject"] = f"Campus Hardware System - {intent} OTP"
+    msg["From"] = SMTP_FROM
+    msg["To"] = receiver_email
+
+    try:
+        with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
+            server.starttls()
+            server.login(SMTP_LOGIN, SMTP_PASSWORD)
+            server.send_message(msg)
+        logger.info(f"OTP email sent to '{receiver_email}' for intent '{intent}'.")
+        return True
+    except Exception as e:
+        logger.error(f"Email send error: {e}")
+        return False
 
 # ==========================================
 # DATABASE INITIALIZATION
@@ -387,6 +426,10 @@ def logout():
     flash("You have been logged out.", "info")
     return redirect(url_for("login"))
 
+# ==========================================
+# REGISTER — Step 1: collect info & send OTP
+# ==========================================
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if "username" in session:
@@ -398,6 +441,7 @@ def register():
         password = request.form.get("password", "")
         role = request.form.get("role", ROLE_USER)
 
+        # Validate with existing schema
         try:
             validated = UserRegisterSchema(username=username, email=email, password=password, role=role)
         except ValidationError as e:
@@ -408,6 +452,7 @@ def register():
             flash("SuperAdmin accounts cannot be created through registration.", "danger")
             return render_template("register.html", roles=[ROLE_USER, ROLE_ADMIN])
 
+        # Check for duplicate username/email in existing users & pending requests
         conn = get_db()
         cursor = conn.cursor()
         cursor.execute(
@@ -427,25 +472,32 @@ def register():
             conn.close()
             flash("A pending request with this username or email already exists.", "warning")
             return render_template("register.html", roles=[ROLE_USER, ROLE_ADMIN])
+        conn.close()
 
+        # Generate OTP and save validated data to session
+        otp = str(random.randint(100000, 999999))
         hashed_pw = bcrypt.hashpw(validated.password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        session["pending_user"] = {
+            "username": validated.username,
+            "email": validated.email,
+            "password_hash": hashed_pw,
+            "role": validated.role,
+            "otp": otp,
+        }
 
-        try:
-            cursor.execute("""
-                INSERT INTO account_requests (username, email, password_hash, role, timestamp, status)
-                VALUES (%s, %s, %s, %s, %s, 'pending')
-            """, (validated.username, validated.email, hashed_pw, validated.role, timestamp))
-            conn.commit()
-            logger.info(f"Account request submitted for '{validated.username}'.")
-            flash("Account request submitted! A SuperAdmin must approve it before you can log in.", "success")
-            return redirect(url_for("login"))
-        except psycopg.errors.UniqueViolation:
-            flash("An account request for this username already exists.", "danger")
-        finally:
-            conn.close()
+        if send_otp_email(validated.email, otp, intent="Account Registration"):
+            flash("We sent a 6-digit code to your email. Please verify.", "info")
+            return redirect(url_for("verify_otp", action="register"))
+        else:
+            session.pop("pending_user", None)
+            flash("Failed to send OTP email. Please check the email address and try again.", "danger")
+            return render_template("register.html", roles=[ROLE_USER, ROLE_ADMIN])
 
     return render_template("register.html", roles=[ROLE_USER, ROLE_ADMIN])
+
+# ==========================================
+# RESET PASSWORD — Step 1: collect info & send OTP
+# ==========================================
 
 @app.route("/reset-password", methods=["GET", "POST"])
 def reset_password():
@@ -466,49 +518,119 @@ def reset_password():
         cursor = conn.cursor()
         cursor.execute("SELECT email FROM users WHERE username = %s", (username,))
         row = cursor.fetchone()
+        conn.close()
 
         if not row:
-            conn.close()
             flash("No account found with that username.", "danger")
             return render_template("reset_password.html")
 
         registered_email = (row["email"] or "").strip().lower()
 
         if not re.match(r"^[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com)$", email.strip().lower()):
-            conn.close()
             flash("Email must be a valid @gmail.com or @yahoo.com address.", "danger")
             return render_template("reset_password.html")
 
         if email.strip().lower() != registered_email:
-            conn.close()
             flash("The email does not match our records for this username.", "danger")
+            return render_template("reset_password.html")
+
+        if new_password != confirm_password:
+            flash("Passwords do not match.", "danger")
             return render_template("reset_password.html")
 
         try:
             validated = PasswordResetSchema(username=username, email=email, password=new_password)
         except ValidationError as e:
-            conn.close()
             flash(f"Validation Error: {e.errors()[0]['msg']}", "danger")
             return render_template("reset_password.html")
 
-        if new_password != confirm_password:
-            conn.close()
-            flash("Passwords do not match.", "danger")
+        # Generate OTP and save validated data to session
+        otp = str(random.randint(100000, 999999))
+        hashed_pw = bcrypt.hashpw(validated.password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
+        session["pending_reset"] = {
+            "username": validated.username,
+            "email": validated.email,
+            "new_password_hash": hashed_pw,
+            "otp": otp,
+        }
+
+        if send_otp_email(validated.email, otp, intent="Password Reset"):
+            flash("We sent a 6-digit code to your email. Please verify.", "info")
+            return redirect(url_for("verify_otp", action="reset"))
+        else:
+            session.pop("pending_reset", None)
+            flash("Failed to send OTP email. Please try again.", "danger")
             return render_template("reset_password.html")
 
-        hashed_pw = bcrypt.hashpw(validated.password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        cursor.execute("""
-            INSERT INTO reset_requests (username, email, new_password_hash, timestamp, status)
-            VALUES (%s, %s, %s, %s, 'pending')
-        """, (username, registered_email, hashed_pw, timestamp))
-        conn.commit()
-        conn.close()
-        logger.info(f"Password reset request submitted for '{username}'.")
-        flash("Reset request submitted. An administrator must approve it before you can log in again.", "success")
+    return render_template("reset_password.html")
+
+# ==========================================
+# VERIFY OTP — Step 2: confirm email & complete action
+# ==========================================
+
+@app.route("/verify-otp/<action>", methods=["GET", "POST"])
+def verify_otp(action):
+    if action not in ("register", "reset"):
+        flash("Invalid verification action.", "danger")
         return redirect(url_for("login"))
 
-    return render_template("reset_password.html")
+    session_key = "pending_user" if action == "register" else "pending_reset"
+
+    if session_key not in session:
+        flash("Session expired or not found. Please start again.", "warning")
+        return redirect(url_for("register") if action == "register" else url_for("reset_password"))
+
+    if request.method == "POST":
+        user_otp = request.form.get("otp_code", "").strip()
+        data = session[session_key]
+
+        if user_otp != data["otp"]:
+            flash("Invalid OTP code. Please try again.", "danger")
+            return render_template("otp_verify.html", action_url=url_for("verify_otp", action=action))
+
+        # OTP is correct — perform the action
+        if action == "register":
+            # Use already-hashed password from session
+            hashed_pw = data["password_hash"]
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            
+            conn = get_db()
+            cursor = conn.cursor()
+            try:
+                cursor.execute("""
+                    INSERT INTO account_requests (username, email, password_hash, role, timestamp, status)
+                    VALUES (%s, %s, %s, %s, %s, 'pending')
+                """, (data["username"], data["email"], hashed_pw, data["role"], timestamp))
+                conn.commit()
+                logger.info(f"Account request submitted for '{data['username']}' after OTP verification.")
+                session.pop(session_key, None)
+                flash("Email verified! Account request submitted. A SuperAdmin must approve it before you can log in.", "success")
+                return redirect(url_for("login"))
+            except psycopg.errors.UniqueViolation:
+                flash("An account request for this username already exists.", "danger")
+                return redirect(url_for("register"))
+            finally:
+                conn.close()
+
+        elif action == "reset":
+            # Use already-hashed password from session
+            hashed_pw = data["new_password_hash"]
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+            conn = get_db()
+            cursor = conn.cursor()
+            cursor.execute("""
+                INSERT INTO reset_requests (username, email, new_password_hash, timestamp, status)
+                VALUES (%s, %s, %s, %s, 'pending')
+            """, (data["username"], data["email"], hashed_pw, timestamp))
+            conn.commit()
+            conn.close()
+            logger.info(f"Password reset request submitted for '{data['username']}' after OTP verification.")
+            session.pop(session_key, None)
+            flash("Email verified! Reset request submitted. An administrator must approve it before you can log in again.", "success")
+            return redirect(url_for("login"))
+
+    return render_template("otp_verify.html", action_url=url_for("verify_otp", action=action))
 
 # ==========================================
 # CATALOG (all roles)
@@ -541,7 +663,6 @@ def catalog():
     cursor.execute(query, params)
     raw_items = cursor.fetchall()
 
-    # Build enriched item list with computed columns
     items = []
     for r in raw_items:
         total_qty = r["initial_quantity"] + r["total_added"]
@@ -566,7 +687,6 @@ def catalog():
     cursor.execute("SELECT SUM(quantity * unit_price) AS total_value FROM hardware")
     total_value = cursor.fetchone()["total_value"] or 0.0
 
-    # Total Stocks = total quantity of ALL inventory (not filtered by search)
     cursor.execute("SELECT SUM(quantity) AS total_stocks FROM hardware")
     total_stocks = cursor.fetchone()["total_stocks"] or 0
 
@@ -788,7 +908,6 @@ def inventory_update(item_id):
         (new_qty, new_price, new_status, item_id)
     )
 
-    # Track any quantity increase as an addition
     added = new_qty - row["quantity"]
     if added > 0:
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -880,7 +999,6 @@ def approvals():
     conn = get_db()
     cursor = conn.cursor()
 
-    # Borrow requests
     cursor.execute("""
         SELECT br.request_id, br.username, h.item_name, br.quantity, br.timestamp
         FROM borrow_requests br JOIN hardware h ON h.item_id = br.item_id
@@ -888,7 +1006,6 @@ def approvals():
     """)
     borrow_requests = cursor.fetchall()
 
-    # Borrowed Items (approved, not yet returned)
     cursor.execute("""
         SELECT br.request_id, br.username, h.item_name, br.quantity, br.timestamp
         FROM borrow_requests br JOIN hardware h ON h.item_id = br.item_id
@@ -896,7 +1013,6 @@ def approvals():
     """)
     active_borrows = cursor.fetchall()
 
-    # Borrow Audit — full history (all statuses)
     cursor.execute("""
         SELECT br.request_id, br.username, h.item_name, br.quantity,
                br.timestamp, br.status, br.batch_id
@@ -906,14 +1022,12 @@ def approvals():
     """)
     borrow_audit = cursor.fetchall()
 
-    # Reset requests
     cursor.execute("""
         SELECT request_id, username, email, timestamp FROM reset_requests
         WHERE status = 'pending' ORDER BY request_id ASC
     """)
     reset_requests = cursor.fetchall()
 
-    # Account requests (SuperAdmin only)
     account_requests = []
     if session.get("role") == ROLE_SUPER_ADMIN:
         cursor.execute("""
@@ -952,8 +1066,8 @@ def approve_borrow(request_id):
         flash("This request has already been processed.", "warning")
         return redirect(url_for("approvals"))
 
-    br_qty    = row["quantity"]    # borrow quantity requested
-    hw_qty    = row["h_quantity"]  # hardware.quantity available
+    br_qty = row["quantity"]
+    hw_qty = row["h_quantity"]
 
     if br_qty > hw_qty:
         conn.close()
@@ -1005,16 +1119,14 @@ def mark_returned(request_id):
         flash("Record not found or not currently active.", "warning")
         return redirect(url_for("approvals"))
 
-    hw_qty_current = row["h_quantity"]
-    br_qty = row["quantity"]
-    new_qty = hw_qty_current + br_qty
+    new_qty = row["h_quantity"] + row["quantity"]
     cursor.execute("UPDATE hardware SET quantity = %s, status = %s WHERE item_id = %s",
                    (new_qty, calculate_status(new_qty), row["item_id"]))
     cursor.execute("UPDATE borrow_requests SET status = 'returned' WHERE request_id = %s", (request_id,))
     conn.commit()
     conn.close()
     logger.info(f"Borrow #{request_id} returned.")
-    flash(f"'{row['item_name']}' ({br_qty} unit(s)) returned and restocked.", "success")
+    flash(f"'{row['item_name']}' ({row['quantity']} unit(s)) returned and restocked.", "success")
     return redirect(url_for("approvals"))
 
 @app.route("/approvals/reset/approve/<int:request_id>", methods=["POST"])
@@ -1189,7 +1301,7 @@ def profile():
     return render_template("profile.html", user=user, username=username, role=session.get("role"))
 
 # ==========================================
-# MY BORROWS (User role — their own history)
+# MY BORROWS (User role)
 # ==========================================
 
 @app.route("/my-borrows")
@@ -1202,7 +1314,6 @@ def my_borrows():
     conn = get_db()
     cursor = conn.cursor()
 
-    # Currently borrowed (approved, not returned)
     cursor.execute("""
         SELECT br.request_id, h.item_name, br.quantity, br.timestamp, br.status
         FROM borrow_requests br JOIN hardware h ON h.item_id = br.item_id
@@ -1211,7 +1322,6 @@ def my_borrows():
     """, (username,))
     my_active = cursor.fetchall()
 
-    # Pending requests (awaiting admin approval)
     cursor.execute("""
         SELECT br.request_id, h.item_name, br.quantity, br.timestamp, br.status
         FROM borrow_requests br JOIN hardware h ON h.item_id = br.item_id
@@ -1220,7 +1330,6 @@ def my_borrows():
     """, (username,))
     my_pending = cursor.fetchall()
 
-    # Full history (returned + rejected)
     cursor.execute("""
         SELECT br.request_id, h.item_name, br.quantity, br.timestamp, br.status
         FROM borrow_requests br JOIN hardware h ON h.item_id = br.item_id
