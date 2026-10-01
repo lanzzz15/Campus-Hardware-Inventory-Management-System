@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Verify Email — Campus Hardware{% endblock %}
+
+{% block content %}
+<div class="auth-card" style="margin: 0 auto; max-width: 440px;">
+  <div class="auth-header">
+    <div class="auth-logo">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/>
+      </svg>
+    </div>
+    <p style="text-transform: uppercase; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; color: var(--color-muted, #6b7280); margin-bottom: 4px;">TWO-STEP VERIFICATION</p>
+    <h1>Verify Your Email</h1>
+    <p>Enter the 6-digit code sent to your email address.</p>
+  </div>
+
+  <form method="POST" action="{{ action_url }}" class="auth-form">
+    <div class="form-group">
+      <label for="otp_code">Enter 6-Digit Code</label>
+      <input
+        type="text"
+        id="otp_code"
+        name="otp_code"
+        maxlength="6"
+        pattern="\d{6}"
+        placeholder="123456"
+        required
+        autofocus
+        inputmode="numeric"
+        autocomplete="one-time-code"
+        style="letter-spacing: 6px; font-size: 1.4rem; font-weight: 700; text-align: center;"
+        oninput="this.value = this.value.replace(/\D/g, '').slice(0, 6)"
+      />
+    </div>
+
+    <div class="info-banner">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      Didn't receive the email? Check your spam folder. The code is valid for this session only.
+    </div>
+
+    <button class="btn btn-primary btn-full" type="submit">Verify Code →</button>
+  </form>
+
+  <div class="auth-links">
+    <a href="{{ url_for('login') }}">← Back to login</a>
+  </div>
+</div>
+{% endblock %}
